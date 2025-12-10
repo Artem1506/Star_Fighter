@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_asteroid_3",
   "bboxMode":0,
-  "bbox_bottom":16,
+  "bbox_bottom":50,
   "bbox_left":0,
-  "bbox_right":17,
+  "bbox_right":53,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":17,
+  "height":51,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"5eadf8f9-f484-480e-acde-cbcf1b41cc51","blendMode":0,"displayName":"default","isLocked":false,"name":"5eadf8f9-f484-480e-acde-cbcf1b41cc51","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":18,
+  "width":54,
 }

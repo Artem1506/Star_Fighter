@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_GG_logo",
   "bboxMode":0,
-  "bbox_bottom":159,
+  "bbox_bottom":479,
   "bbox_left":0,
-  "bbox_right":127,
+  "bbox_right":383,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":160,
+  "height":480,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"26d36117-9e2f-4f85-9161-9eee394d28cc","blendMode":0,"displayName":"default","isLocked":false,"name":"26d36117-9e2f-4f85-9161-9eee394d28cc","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":128,
+  "width":384,
 }

@@ -8,3 +8,8 @@ if (timer) {
 	alarm[0] = room_speed * 3;
 	timer = false; 
 }
+
+if (sc_press_any_button()) {
+	audio_stop_sound(snd_logo);
+	room_goto_next();
+}

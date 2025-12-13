@@ -5,7 +5,7 @@ if (!audio_is_playing(snd_logo)) {
 	audio_play_sound(snd_logo, 1, false);
 }
 if (timer) {
-	alarm[0] = room_speed * 3;
+	alarm[0] = room_speed * 1;
 	timer = false; 
 }
 

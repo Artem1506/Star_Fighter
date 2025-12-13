@@ -2,10 +2,10 @@
 // You can write your code in this editor
 
 // Телепортация
-if (x < -25) { x = room_width + 25 }
-if (x > room_width +25) { x = -25 }
-if (y < -25) { y = room_height + 25 }
-if (y > room_height + 25) { y = -25 }
+if (x < -20) { x = room_width + 20 }
+if (x > room_width +20) { x = -20 }
+if (y < -20) { y = room_height + 20 }
+if (y > room_height + 20) { y = -20 }
 
 // Delta time (секунды)
 var dt = delta_time / 1000000.0;

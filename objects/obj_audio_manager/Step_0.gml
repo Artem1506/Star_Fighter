@@ -21,7 +21,6 @@ if (get_audio_track == true) {
 	get_audio_track = false
 }
 
-
 if (!audio_is_playing(current_audio)) {
 	get_audio_track = true; 
 }

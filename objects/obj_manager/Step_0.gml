@@ -47,10 +47,6 @@ switch (room) {
 				audio_play_sound(snd_click, 5, false) }
 			room_goto(rm_main) }
         break;
-    case rm_main:
-        asteroid_x = room_width + margin;
-        asteroid_y = irandom(room_height);
-        break;
     case rm_gameover:
 		ini_open("data.ini");
 		record = ini_read_real("record", "none", 0);

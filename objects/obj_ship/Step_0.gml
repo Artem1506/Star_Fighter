@@ -11,8 +11,11 @@ if (y > room_height + 20) { y = -20 }
 var dt = delta_time / 1000000.0;
 
 // Вращение
-var step = (mouse_wheel_up() ? 1 : 0) - (mouse_wheel_down() ? 1 : 0);
-if (invert_wheel) step = -step;
+var wheel_step = (mouse_wheel_up() ? 1 : 0) - (mouse_wheel_down() ? 1 : 0);
+var key_step = (keyboard_check(vk_left) - keyboard_check(vk_right)) / 2 ;
+var virtual_key_step = (obj_virtual_button.left_down - obj_virtual_button.right_down) / 2 ;
+if (invert_wheel) wheel_step = -wheel_step;
+var step = wheel_step + key_step + virtual_key_step;
 // Добавляем импульс угловой скорости
 if (step != 0) {
     angular_velocity += step * wheel_sensitivity;
@@ -31,7 +34,7 @@ global.rot_angle = image_angle;
 
 // Движение
 if (sprite_index != spr_boom_big) {
-	if (keyboard_check(ord("W"))) {
+	if (keyboard_check(ord("W")) || obj_virtual_button.boost_down == true) {
 	    vel_x += lengthdir_x(thrust, image_angle);
 	    vel_y += lengthdir_y(thrust, image_angle);
 	}
@@ -43,7 +46,7 @@ if (sprite_index != spr_boom_big) {
 }
 
 // Стрельба
-if (keyboard_check(ord("D")) && ready_shoot == true) {
+if ((keyboard_check(ord("D")) || obj_virtual_button.shoot_down == true) && ready_shoot == true) {
 	audio_play_sound(snd_shoot, 5, false)
 	instance_create_layer(obj_ship.x, obj_ship.y, "Instances", obj_bullet)
 	ready_shoot = false;

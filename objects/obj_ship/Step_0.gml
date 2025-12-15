@@ -12,9 +12,9 @@ var dt = delta_time / 1000000.0;
 
 // Вращение
 var wheel_step = (mouse_wheel_up() ? 1 : 0) - (mouse_wheel_down() ? 1 : 0);
+if (invert_wheel) wheel_step = -wheel_step;
 var key_step = (keyboard_check(vk_left) - keyboard_check(vk_right)) / 2 ;
 var virtual_key_step = (obj_virtual_button.left_down - obj_virtual_button.right_down) / 2 ;
-if (invert_wheel) wheel_step = -wheel_step;
 var step = wheel_step + key_step + virtual_key_step;
 // Добавляем импульс угловой скорости
 if (step != 0) {

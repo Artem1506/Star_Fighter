@@ -6,9 +6,6 @@ left_down = false;
 shoot_down = false;
 boost_down = false;
 exit_down = false;
-
-//var mx = device_mouse_x_to_gui(0);
-//var my = device_mouse_y_to_gui(0);
 	
 if (device_mouse_check_button(0, mb_left)) {
 	if (point_in_rectangle(
